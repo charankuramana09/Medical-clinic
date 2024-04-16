@@ -1,0 +1,27 @@
+.useful-health-forms {
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    font-weight: bold;
+    color: rgb(25, 10, 140);
+  }
+  
+  .form-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .form-list li a {
+    color: green;
+    text-decoration: none;
+  }
+  
+  .form-list li a:hover {
+    text-decoration: underline;
+  }
+.form-img{
+  height: 200px;
+  width: 300px;
+  margin-left: 80px;
+}  

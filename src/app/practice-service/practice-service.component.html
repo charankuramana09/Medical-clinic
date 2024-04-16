@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="practice-services">
+    <div *ngFor="let service of practiceServices" class="service-category">
+      <h3 style="color: rgb(25, 10, 140)"><strong>{{ service.category }}</strong></h3>
+      <ul>
+        <li *ngFor="let item of service.services">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

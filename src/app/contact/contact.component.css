@@ -1,0 +1,30 @@
+.contact-info {
+  font-family: Arial, sans-serif;
+}
+
+.heading,
+.clinic-name,
+.telephone,
+.fax {
+  color: rgb(25, 10, 140);
+  font-weight: bold;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .heading,
+  .clinic-name,
+  .telephone,
+  .fax {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+.img-responsive{
+  height: 200px;
+  width: 350px;
+  margin-left: 210px;
+}

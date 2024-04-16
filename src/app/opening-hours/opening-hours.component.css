@@ -1,0 +1,11 @@
+.special-interest {
+    color: rgb(25, 10, 140);
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+    
+}
+.img-fluid:hover{
+    margin-left: 60px;
+}

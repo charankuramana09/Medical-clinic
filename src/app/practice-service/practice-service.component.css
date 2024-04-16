@@ -1,0 +1,15 @@
+/* Remove the fixed width from .practice-services and .service-category */
+.practice-services {
+  display: flex;
+  overflow-x: auto; /* Add overflow to enable horizontal scrolling if needed */
+}
+
+.service-category {
+  margin-right: 20px; /* Add spacing between service categories */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 250px; /* Set a minimum width for each card */
+  flex: 1 0 auto; /* Allow the cards to flex to fit the available space */
+}

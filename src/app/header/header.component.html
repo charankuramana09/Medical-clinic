@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="header">
+    <div class="header-row doctor-name rainbow-text">
+      <span class="font ">Vernon Medical Clinic</span>
+    </div>
+    <div class="header-row green-background">
+      <div class="doctors">
+        <div class="doctors-row">
+          <div class="doctor">
+            <span class="doctor-name">Dr. Mary Ward</span><br>
+            <span class="doctor-qualifications">MPH., MICGP., MRCGP GMS 61445</span>
+          </div>
+          <div class="doctor">
+            <span class="doctor-name">Dr. John Smith</span><br>
+            <span class="doctor-qualifications">MICGP, DVE, DRGOG, IMC 403401</span>
+          </div>
+        </div>
+      </div>
+      <img src="../assets/image2-removebg-preview.png" alt="Doctors Image" class="doctor-image">
+    </div>
+    <div class="header-row nav-bar color content-alignment-center justify-content-center">
+      <!-- Hamburger icon -->
+      <div class="hamburger-menu" (click)="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class=" justify-content-center content-alignment-center">
+        <ul [class.active]="menuOpen" >
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/" [class.blinking]="menuOpen">Home</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/opening-hours" [class.blinking]="menuOpen">Opening Hours</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/practice-services" [class.blinking]="menuOpen">Practice Services</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/fees" [class.blinking]="menuOpen">Fees</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/service-information" [class.blinking]="menuOpen">Service Information</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/useful-forms" [class.blinking]="menuOpen">Useful Forms</a></li>
+          <li (mouseenter)="activateNavItem()" (mouseleave)="deactivateNavItem()"><a routerLink="/contact" [class.blinking]="menuOpen">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

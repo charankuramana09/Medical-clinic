@@ -1,0 +1,94 @@
+.image-container {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 20px; /* Add spacing between images and clinic info */
+}
+
+.image-container img {
+  height: 140px;
+  width: 180px;
+  border-radius: 8px;
+  
+}
+
+.image-container img:hover {
+  transform: scale(0.5);
+}
+
+.clinic-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #555;
+}
+
+.footer p:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.color {
+  background-color: rgb(15, 170, 170);
+}
+
+.color1 {
+  background-color: rgb(7, 184, 104);
+}
+
+/* Marquee styles */
+.marquee-container {
+  overflow: hidden;
+  width: 90%; /* Ensure the marquee container stays within page boundaries */
+  animation: marquee 20s linear infinite;
+}
+
+.content-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  100% { transform: translateX(100%); }
+  40% { transform: translateX(-100%); }
+}
+
+/* Stop animation on hover */
+.marquee-container:hover {
+  animation-play-state: paused;
+  box-shadow: 0 4px 8px yellowgreen, 0 6px 20px red;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Resume animation when not hovered */
+.marquee-container:not(:hover) {
+  animation-play-state: running;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .image-container {
+      display: block;
+      text-align: center;
+      margin: 0 auto 20px; /* Center and add spacing between images and clinic info */
+  }
+
+  .image-container img {
+      width: 100%; /* Make images responsive */
+      height: auto;
+      max-width: 70px; /* Limit maximum width */
+  }
+
+ 
+}
