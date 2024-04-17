@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/",
+    "/contact",
+    "/fees",
+    "/opening-hours",
+    "/practice-services",
+    "/service-information",
+    "/useful-forms"
+  ]
+}
