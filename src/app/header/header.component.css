@@ -88,8 +88,6 @@
   font-weight: bold;
 }
 
-
-
 .list {
   margin-bottom: 20px;
 }
@@ -131,8 +129,8 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: 0; /* Adjusted to display on the left side */
+    width: 150px; /* Adjusted width */
     background-color: #90ee90; /* Light Green */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -180,40 +178,3 @@
 .header-row .font {
   animation: rainbow 6s infinite;
 }
-
-.rainbow-background {
-  animation: rainbow-background 6s infinite;
-}
-
-
-
-.hamburger-menu .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 4px 0;
-  animation: rainbow 1.5s infinite alternate; /* Add this line */
-}
-
-.nav-bar ul.active li:hover a {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.blinking {
-  animation: blink 1.5s infinite;
-}
-.nav-bar ul li a.blinking {
-  animation: blink 1.5s infinite;
-}
-
-@keyframes blink {
-  0% { color: black; /* Light Green */ }
-  25% { color: rgb(132, 144, 156); }
-  50% { color: rgb(50, 21, 135); }
-  75% { color: #90ee90; /* Light Green */ }
-  100% { color: rgb(170, 15, 155); }
-}
-
-
-

@@ -64,13 +64,11 @@
   40% { transform: translateX(-100%); }
 }
 
-/* Stop animation on hover */
 .marquee-container:hover {
   animation-play-state: paused;
   transition: transform 0.7s ease-in-out;
 }
 
-/* Resume animation when not hovered */
 .marquee-container:not(:hover) {
   animation-play-state: running;
 }
