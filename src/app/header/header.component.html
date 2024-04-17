@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="header">
-    <div class="header-row doctor-name rainbow-text">
+    <div class="header-row  ">
       <span class="font ">Vernon Medical Clinic</span>
     </div>
     <div class="header-row green-background">
@@ -25,7 +25,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-      <div class=" justify-content-center content-alignment-center">
+      <div class=" justify-content-right content-alignment-right">
         <ul [class.active]="menuOpen" >
           <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/" [class.blinking]="menuOpen">Home</a></li>
           <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/opening-hours" [class.blinking]="menuOpen">Opening Hours</a></li>
@@ -33,7 +33,7 @@
           <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/fees" [class.blinking]="menuOpen">Fees</a></li>
           <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/service-information" [class.blinking]="menuOpen">Service Information</a></li>
           <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/useful-forms" [class.blinking]="menuOpen">Useful Forms</a></li>
-          <li (mouseenter)="activateNavItem()" (mouseleave)="deactivateNavItem()"><a routerLink="/contact" [class.blinking]="menuOpen">Contact</a></li>
+          <li class="p-3" (mouseenter)="deactivateNavItem()" (mouseleave)="activateNavItem()"><a routerLink="/contact" [class.blinking]="menuOpen">Contact</a></li>
         </ul>
       </div>
     </div>

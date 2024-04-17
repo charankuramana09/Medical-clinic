@@ -1,11 +1,9 @@
-/* styles.css or your custom CSS file */
-
 .container-fluid {
   padding: 0;
 }
 
 .header {
-  background-color: #f0f0f0;
+  background-color: #f0f8ff; /* Light Blue */
   padding: 20px;
   position: relative;
 }
@@ -18,8 +16,8 @@
 }
 
 .green-background {
-  background-color: rgb(15, 170, 170);
-  color: white;
+  background-color: #90ee90; /* Light Green */
+  color: black;
 }
 
 .doctors {
@@ -39,12 +37,12 @@
 
 .nav-bar li a:hover {
   text-decoration: none;
-  color: rgb(15, 170, 170);
+  color: #008000; /* Dark Green */
   text-decoration: underline;
 }
 
 .nav-bar li a  {
-  color: white;
+  color: #008000; /* Dark Green */
   font-weight: bold;
   text-decoration: none;
 }
@@ -77,11 +75,11 @@
 }
 
 .doctor-image:hover {
-  box-shadow: 0 0 20px green;
+  box-shadow: 0 0 20px #90ee90; /* Light Green */
 }
 
 .font {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: fadeIn 0.5s ease-out;
   background: -webkit-linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff); /* Create a rainbow gradient */
@@ -90,9 +88,7 @@
   font-weight: bold;
 }
 
-.color {
-  color: white;
-}
+
 
 .list {
   margin-bottom: 20px;
@@ -137,7 +133,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: green;
+    background-color: #90ee90; /* Light Green */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
@@ -155,15 +151,19 @@
   }
 
   .nav-bar ul.active li a {
-    color: white;
+    color: #008000; /* Dark Green */
   }
 
   .hamburger-menu {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px; /* Adjusted position to the left corner */
     z-index: 2;
+  }
+
+  .header-row {
+    padding-left: 60px; /* Add some padding to the left to create distance from the hamburger menu */
   }
 }
 
@@ -171,7 +171,7 @@
    0% { color: rgb(81, 84, 151); }
   17% { color: rgb(19, 114, 196); }
   34% { color: yellow; }
-  51% { color: green; }
+  51% { color: #90ee90; /* Light Green */ }
   68% { color: blue; }
   85% { color: indigo; }
   100% { color: violet; }
@@ -185,15 +185,7 @@
   animation: rainbow-background 6s infinite;
 }
 
-@keyframes rainbow-background {
-   0% { color: rgb(81, 84, 151); }
-  17% { color: rgb(106, 148, 10); }
-  34% { background-color: yellow; }
-  51% { background-color: green; }
-  68% { background-color: blue; }
-  85% { background-color: indigo; }
-  100% { background-color: violet; }
-}
+
 
 .hamburger-menu .bar {
   width: 25px;
@@ -207,11 +199,6 @@
   text-decoration: underline;
   font-weight: bold;
 }
-@keyframes blink {
-  0% { color: rgb(15, 170, 170); }
-  50% { color: white; }
-  100% { color: rgb(15, 170, 170); }
-}
 
 .blinking {
   animation: blink 1.5s infinite;
@@ -221,9 +208,12 @@
 }
 
 @keyframes blink {
-  0% { color: rgb(15, 170, 170); }
-  25% { color: rgb(11, 112, 212); }
-  50% { color: white; }
-  75% { color: rgba(75, 212, 11, 0.831); }
+  0% { color: black; /* Light Green */ }
+  25% { color: rgb(132, 144, 156); }
+  50% { color: rgb(50, 21, 135); }
+  75% { color: #90ee90; /* Light Green */ }
   100% { color: rgb(170, 15, 155); }
 }
+
+
+
